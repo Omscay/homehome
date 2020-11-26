@@ -1,0 +1,16 @@
+<script>
+
+let result1 = 0;
+let number2 = 0;
+let result2 = 0;
+for(let i = 1;i <= 100; i++) // перебираем числа от 1 до 100
+{
+ number1 = Math.pow(i,2);//все числа возводятся во вторую степень
+ result1 += number1;// и складываются
+ number2 += i;// числа от 1 до 100 складываются
+}
+result2 = Math.pow(number2,2);// и потом возводятся во вторую степень
+let result = result2 - result1;// из квадрата суммы вычитаем сумму квадратов
+alert(result);// выводим результат
+
+</script>
